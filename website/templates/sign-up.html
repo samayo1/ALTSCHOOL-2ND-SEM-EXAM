@@ -1,0 +1,76 @@
+{% extends "base.html" %} {% block title %} Sign UP {% endblock%} {% block content %} 
+<form action="" method="post" class="form">
+    <div class="form_group">
+        <label for="first_name" class="form_group-label">First name</label>
+        <input
+        type="text"
+        name="first_name"
+        id="first_name"
+        class="first_name"
+        placeholder="input first name"
+        required
+        />
+
+    </div>
+            <div class="form_group">
+                <label for="last_name" class="form_group-label">Last name</label>
+                <input
+                type="text"
+                name="last_name"
+                id="last_name"
+                class="last_name"
+                placeholder="input last name"
+                required
+                />
+            </div>
+            <div class="form_group">
+                <label for="email" class="form_group-label">Email address</label>
+                <input
+                type="email"
+                name="email"
+                id="email"
+                class="email"
+                placeholder="input email"
+                required
+                />
+            </div>
+            <div class="form_group">
+                <label for="username" class="form_group-label">Username</label>
+                <input
+                type="text"
+                name="username"
+                id="username"
+                class="username"
+                placeholder="input username"
+                required
+                />
+            </div>
+            <div class="form_group">
+                <label for="password1" class="form_group-label">Password</label>
+                <input
+                type="password"
+                name="password1"
+                id="password1"
+                class="password1"
+                placeholder="input password"
+                required
+                />
+            </div>
+            <div class="form_group">
+                <label for="password2" class="form_group-label">Confirm Password</label>
+                <input
+                type="password"
+                name="password2"
+                id="password2"
+                class="password2"
+                placeholder="confirm password"
+                required
+                />
+            </div>
+            <div class="form_group">
+            <button class="btn-submit">submit</button>
+            </div>
+        </form>
+    </main>
+
+{% endblock %}

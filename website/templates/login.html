@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block title %} Login {% endblock%} {% block content %} 
+
+
+  
+<section class="grid-container">
+  <form action="" method="post">
+    <h3 style="color:blue;text-align:center;">LOG IN</h3>
+    <div class = "form-group">
+      <label for="email/phone">Email/Username</label>
+      <input
+        placeholder="Enter email or username"
+        type="email/text"
+        name="email/username"
+        id="email/username"
+        class="email/username"
+        required
+        />
+    </div>
+<br><br>
+    <div>
+      <label for="password">Enter Password</label>
+      <input
+        placeholder="Enter password"
+        type="password"
+        name="password"
+        id="password"
+        class="password"
+        required
+        />
+    </div>
+<br><br>
+    <button>SIGN IN</button>
+<br><br>
+    <input type="checkbox"> <p>Keep me signed in</p>
+    <p>New to website? <a href="sign-up.html">Sign Up</a</p>
+<br><br>
+    <a href="home.html">Back to Home</a>
+  </form>
+</section> 
+
+{% endblock %}
